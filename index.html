@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang thông tin Hiếu Bùi BĐS 24h cố vấn đầu tư Bất Động Sản - Hàng Hiệu</title>
-    <meta name="description" content="Liên kết nhanh với chuyên viên tư vấn bất động sản - Mua bán, cho thuê nhà đất, căn hộ" />
+    <title> Trang thông tin Hiếu Bùi BĐS 24h cố vấn đầu tư Bất Động Sản - Hàng Hiệu</title>
+    <meta name="description" content="Liên kết nhanh với chuyên viên tư vấn bất động sản - Mua bán, cho thuê nhà đất, căn hộ. Tư vấn đầu tư bất động sản Vinhomes, Masterise Homes, MIK Group, Sun Group, kinh tế Việt Nam, chính trị, tin tức, đầu tư chứng khoán, đầu tư công, kinh tế vĩ mô." />
+    <meta name="keywords" content="bất động sản Vinhomes, Hiếu Bùi BĐS 24h, Masterise Homes, MIK Group, Sun Group, kinh tế Việt Nam, tăng trưởng kinh tế, chính trị Việt Nam, tin tức Việt Nam, đầu tư chứng khoán Việt Nam, đầu tư công Việt Nam, kinh tế vĩ mô Việt Nam, Vinhomes Ocean Park, Vinhomes Grand Park, Masterise Lumière Riverside, MIK Group Phú Quốc, Sun World Phú Quốc, VN-Index, GDP Việt Nam, Vinhomes Green Paradise, Vinhomes Cần Giờ, Vingroup, Masterise Lumière Riverside, Sun Elite City, Charmora City, tăng trưởng GDP 2025, kinh tế số Việt Nam, FDI Việt Nam, lạm phát Việt Nam, chứng khoán VN-Index 2025, đầu tư hạ tầng Việt Nam" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet" />
     <style>
@@ -24,28 +25,61 @@
       .link-button {
         border: 1px solid rgba(255, 215, 0, 0.4); /* vàng nhạt */
       }
+      
+      .slideshow-container .slide {
+        transition: opacity 1s ease-in-out;
+      }
+
+      /* Phần ẩn cho SEO ngầm và nguồn link báo chính thống */
+      .seo-hidden {
+        display: none;
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-yellow-400">
     <div class="min-h-screen py-8 px-4">
       <div class="max-w-2xl mx-auto">
 
-        <!-- Avatar & Info -->
-        <div class="text-center mb-8 animate-fadeIn">
-          <div class="relative inline-block mb-6">
-            <div class="w-35 h-35 mx-auto rounded-full p-1" style="background: linear-gradient(to bottom right, #FFD700, #FFA500);">
-              <div class="w-32 h-32 bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
-                <img src="avata.jpg" alt="Ảnh đại diện của tôi" class="w-full h-full object-cover object-center">
+        <!-- Phần đầu với slideshow background từ 1-3 file ảnh (thay bằng file thật của bạn) -->
+        <div class="relative mb-8 overflow-hidden rounded-xl h-96"> <!-- Chiều cao cố định để background đẹp -->
+          <!-- Slideshow background (ví dụ dùng file cục bộ, thay bằng ảnh thật) -->
+          <div class="slideshow-container header-slideshow absolute inset-0">
+            <img src="background1.jpg" class="slide absolute top-0 left-0 w-full h-full object-cover" style="opacity: 1; filter: brightness(0.7);" alt="Bất động sản Vinhomes, đầu tư chứng khoán Việt Nam">
+            <img src="background2.jpg" class="slide absolute top-0 left-0 w-full h-full object-cover" style="opacity: 0; filter: brightness(0.7);" alt="Kinh tế vĩ mô Việt Nam, Sun Group bất động sản">
+            <img src="background3.jpg" class="slide absolute top-0 left-0 w-full h-full object-cover" style="opacity: 0; filter: brightness(0.7);" alt="Masterise Homes, tin tức kinh tế Việt Nam">
+            <!-- Xóa img thừa nếu chỉ dùng 1-2 ảnh. Nếu ảnh ở thư mục khác, dùng src="images/background1.jpg" -->
+          </div>
+          <!-- Avatar & Info đặt ở cuối background, trung tâm -->
+          <div class="absolute bottom-0 left-0 right-0 text-center animate-fadeIn z-10 p-4 bg-gray-900 bg-opacity-50 rounded-b-xl"> <!-- Nền mờ để chữ dễ đọc -->
+            <div class="relative inline-block mb-2">
+              <div class="w-32 h-32 mx-auto rounded-full p-1" style="background: linear-gradient(to bottom right, #FFD700, #FFA500);">
+                <div class="w-full h-full bg-gray-800 rounded-full flex items-center justify-center overflow-hidden">
+                  <img src="avata.jpg" alt="Ảnh đại diện Hiếu Bùi BĐS 24h cố vấn đầu tư bất động sản hàng hiệu" class="w-full h-full object-cover object-center">
+                </div>
+              </div>
+              <div class="absolute -bottom-2 -right-2 bg-green-500 w-8 h-8 rounded-full border-4 border-gray-900 flex items-center justify-center">
+                <i class="fas fa-check text-white text-xs"></i>
               </div>
             </div>
-            <div class="absolute -bottom-2 -right-2 bg-green-500 w-10 h-10 rounded-full border-4 border-gray-900 flex items-center justify-center">
-              <i class="fas fa-check text-white text-sm"></i>
-            </div>
-          </div>
 
-          <h1 class="text-3xl font-bold mb-2">Bùi Văn Hiếu</h1>
-          <p class="text-lg font-semibold mb-2" style="color:#FFD700;">CỐ VẤN ĐẦU TƯ BẤT ĐỘNG SẢN HÀNG HIỆU</p>
-          <p class="mb-4" style="color:#FFD700;">🏆 Top 10 Môi Giới Xuất Sắc 2024</p>
+            <h1 class="text-2xl font-bold mb-1">Bùi Văn Hiếu</h1>
+            <p class="text-md font-semibold mb-1" style="color:#FFD700;">CỐ VẤN ĐẦU TƯ BẤT ĐỘNG SẢN HÀNG HIỆU</p>
+            <p class="mb-2" style="color:#FFD700;">🏆 Top 10 Môi Giới Xuất Sắc 2024</p>
+          </div>
+        </div>
+
+<script>
+  const headerSlides = document.querySelectorAll('.header-slideshow .slide');
+  if (headerSlides.length > 1) {
+    let currentHeaderSlide = 0;
+    function showNextHeaderSlide() {
+      headerSlides[currentHeaderSlide].style.opacity = 0;
+      currentHeaderSlide = (currentHeaderSlide + 1) % headerSlides.length;
+      headerSlides[currentHeaderSlide].style.opacity = 1;
+    }
+    setInterval(showNextHeaderSlide, 3000); // Thay đổi slide mỗi 3 giây nếu có nhiều hơn 1 ảnh
+  }
+</script>
 
 <!-- Tiêu đề danh sách -->
 <span class="block font-semibold mb-2 text-yellow-500 text-center text-lg">Chuyên tư vấn các dự án và dịch vụ:</span>
@@ -150,8 +184,8 @@
         </div>
 
 <!-- Social links với chữ đen và viền nhạt -->
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 animate-slideUp">
-  <h2 class="col-span-1 md:col-span-2 text-xl font-bold flex items-center text-yellow-400">
+<div class="grid grid-cols-2 gap-4 mb-8 animate-slideUp">
+  <h2 class="col-span-2 text-xl font-bold flex items-center text-yellow-400">
     <i class="fas fa-link mr-3"></i>
     Kết Nối Với Tôi
   </h2>
@@ -253,8 +287,20 @@
   </a>
 </div>
 
+<script>
+  const bottomSlides = document.querySelectorAll('.bottom-slideshow .slide');
+  let currentBottomSlide = 0;
 
-        <!-- Footer & Contact info -->
+  function showNextBottomSlide() {
+    bottomSlides[currentBottomSlide].style.opacity = 0;
+    currentBottomSlide = (currentBottomSlide + 1) % bottomSlides.length;
+    bottomSlides[currentBottomSlide].style.opacity = 1;
+  }
+
+  setInterval(showNextBottomSlide, 3000); // Thay đổi slide mỗi 3 giây
+</script>
+
+<!-- Footer & Contact info -->
 <div class="bg-gray-800 rounded-2xl shadow-xl p-4 text-yellow-300 mb-8 animate-fadeIn text-center">
   <h2 class="text-lg font-bold mb-2">
     Thông Tin Liên Hệ: 0962 299 939 - 0868 499 929
@@ -276,3 +322,117 @@
     <span>Made with hieubuibds24h + Cloudflare Pages</span>
   </p>
 </div>
+
+        <!-- Phần ẩn cho SEO ngầm: tích hợp từ khóa và link nguồn báo chính thống (display: none để ẩn) -->
+        <div class="seo-hidden">
+          <p>bất động sản Vinhomes, Hiếu Bùi BĐS 24h, Masterise Homes, MIK Group, Sun Group, kinh tế Việt Nam, chính trị Việt Nam, tin tức Việt Nam, đầu tư chứng khoán Việt Nam, đầu tư công Việt Nam, kinh tế vĩ mô Việt Nam, Vinhomes Ocean Park, Vinhomes Grand Park, Masterise Lumière Riverside, MIK Group Phú Quốc, Sun World Phú Quốc, VN-Index, GDP Việt Nam, tăng trưởng kinh tế Việt Nam 2025, lạm phát kinh tế Việt Nam, chính sách chính trị 2025, tin tức kinh tế chính trị Việt Nam, hướng dẫn đầu tư chứng khoán Việt Nam, kế hoạch đầu tư công 2025, dự báo kinh tế vĩ mô 2025, Vinhomes Green Paradise, Vinhomes Cần Giờ, Vingroup doanh số, Masteri Era Landmark, MIK Imperia, Sun Elite City, Charmora City, kinh tế số Việt Nam 2025, FDI Việt Nam, lạm phát Việt Nam, chứng khoán VN-Index 2026, đầu tư hạ tầng Việt Nam, tăng trưởng GDP quý IV 2025, kim ngạch xuất nhập khẩu Việt Nam, Sun Urban City, APEC Phú Quốc, kinh tế trải nghiệm Việt Nam</p>
+          <!-- Link nguồn báo chính thống ẩn (rel="nofollow" để không truyền link juice, tránh penalty) -->
+          <a href="https://vnexpress.net/chu-de/vinhomes-6361" rel="nofollow">Nguồn Vinhomes VnExpress</a>
+          <a href="https://vnexpress.net/tag/bat-dong-san-vinhomes-724598" rel="nofollow">Nguồn bất động sản Vinhomes VnExpress</a>
+          <a href="https://tuoitre.vn/kinh-te-viet-nam.html" rel="nofollow">Nguồn kinh tế Việt Nam Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/kinh-doanh.htm" rel="nofollow">Nguồn tin kinh tế Tuổi Trẻ</a>
+          <a href="https://cafef.vn/thi-truong-chung-khoan.chn" rel="nofollow">Nguồn chứng khoán CafeF</a>
+          <a href="https://cafef.vn/" rel="nofollow">Nguồn tài chính CafeF</a>
+          <a href="https://vietnamnet.vn/kinh-te-vi-mo-tag11323615380199862620.html" rel="nofollow">Nguồn kinh tế vĩ mô VietnamNet</a>
+          <a href="https://vietnamnet.vn/mot-thap-ky-on-dinh-kinh-te-vi-mo-tao-da-tang-truong-2451770.html" rel="nofollow">Nguồn ổn định kinh tế vĩ mô VietnamNet</a>
+          <a href="https://zingnews.vn/dau-an-khac-biet-cua-masterise-homes-trong-nam-2021-post1292581.html" rel="nofollow">Nguồn Masterise Homes ZingNews</a>
+          <a href="https://zingnews.vn/masterise-homes-bat-tay-elie-saab-trong-bat-dong-san-hang-hieu-moi-post1306358.html" rel="nofollow">Nguồn Masterise Homes hợp tác ZingNews</a>
+          <a href="https://thanhnien.vn/sun-group-tags496837.html" rel="nofollow">Nguồn Sun Group Thanh Niên</a>
+          <a href="https://thanhnien.vn/sungroup-tags495960.html" rel="nofollow">Nguồn SunGroup đầu tư Thanh Niên</a>
+          <a href="https://vnexpress.net/vinhomes-con-hon-8-5-ty-usd-doanh-so-chua-ghi-nhan-4958215.html" rel="nofollow">Nguồn Vinhomes doanh số VnExpress</a>
+          <a href="https://cafef.vn/cu-tat-tay-gan-50-ty-usd-voi-loat-khu-do-thi-lon-nhu-thanh-pho-cua-vingroup-188251118170839242.chn" rel="nofollow">Nguồn Vingroup đầu tư CafeF</a>
+          <a href="https://cafef.vn/co-hoi-cuoi-cung-nhan-thuong-tu-vingroup-cua-ty-phu-pham-nhat-vuong-188251204102110323.chn" rel="nofollow">Nguồn Vingroup thưởng CafeF</a>
+          <a href="https://vietnamnet.vn/vinhomes-green-city-suc-hut-cua-khu-do-thi-thong-minh-vung-ve-tinh-tp-hcm-2468117.html" rel="nofollow">Nguồn Vinhomes Green City VietnamNet</a>
+          <a href="https://vnexpress.net/chu-de/vinhomes-6361-p4" rel="nofollow">Nguồn Vinhomes lãi VnExpress</a>
+          <a href="https://cafef.vn/400000-ty-dong-hang-ton-kho-cua-vinhomes-novaland-kinh-bac-phat-datup-mo-chien-luoc-om-hang-cho-thoi-188251110063244447.chn" rel="nofollow">Nguồn tồn kho bất động sản CafeF</a>
+          <a href="https://cafef.vn/vinhomes.html" rel="nofollow">Nguồn Vinhomes CafeF</a>
+          <a href="https://thanhnien.vn/vinhomes-tags497503.html" rel="nofollow">Nguồn Vinhomes Thanh Niên</a>
+          <a href="https://vnexpress.net/vinhomes-green-paradise-them-lua-chon-an-cu-ven-bien-4987974.html" rel="nofollow">Nguồn Vinhomes Green Paradise VnExpress</a>
+          <a href="https://vnexpress.net/tag/masterise-homes-1335873" rel="nofollow">Nguồn Masterise Homes VnExpress</a>
+          <a href="https://vnexpress.net/masterise-homes-lan-dau-to-chuc-hoi-nghi-ve-khong-gian-song-hang-hieu-4965823.html" rel="nofollow">Nguồn Masterise hội nghị VnExpress</a>
+          <a href="https://thanhnien.vn/masterise-homes-tags500619.html" rel="nofollow">Nguồn Masterise Homes Thanh Niên</a>
+          <a href="https://vnexpress.net/chien-luoc-cua-masterise-homes-tren-thi-truong-bat-dong-san-cao-cap-4987059.html" rel="nofollow">Nguồn Masterise chiến lược VnExpress</a>
+          <a href="https://vietnamnet.vn/branded-living-tuong-lai-cua-bat-dong-san-cao-cap-o-viet-nam-2467087.html" rel="nofollow">Nguồn Branded Living VietnamNet</a>
+          <a href="https://tuoitre.vn/masterise-homes.html" rel="nofollow">Nguồn Masterise Homes Tuổi Trẻ</a>
+          <a href="https://cafef.vn/masterise-homes-mo-ra-vung-dat-dieu-ky-giua-long-do-thi-phia-dong-18825110711363319.chn" rel="nofollow">Nguồn Masterise dự án CafeF</a>
+          <a href="https://vnexpress.net/masterise-group-mo-rong-chien-luoc-qua-cac-du-an-ha-tang-4964637.html" rel="nofollow">Nguồn Masterise hạ tầng VnExpress</a>
+          <a href="https://vnexpress.net/masterise-homes-nhan-giai-nha-phat-trien-bat-dong-san-hang-sang-tot-nhat-4956766.html" rel="nofollow">Nguồn Masterise giải thưởng VnExpress</a>
+          <a href="https://vnexpress.net/masterise-homes-ra-mat-du-an-11-2-ha-tai-ocean-park-3-4960856.html" rel="nofollow">Nguồn Masterise Ocean Park VnExpress</a>
+          <a href="https://vnexpress.net/mik-group-ra-mat-ba-dong-bat-dong-san-moi-nam-2026-4960264.html" rel="nofollow">Nguồn MIK Group mới VnExpress</a>
+          <a href="https://vnexpress.net/mik-group-hop-tac-lynkid-trien-khai-chuong-trinh-khach-hang-than-thiet-4986716.html" rel="nofollow">Nguồn MIK LynkiD VnExpress</a>
+          <a href="https://vnexpress.net/mik-group-len-ke-hoach-mo-rong-quy-dat-tai-quang-ninh-4964102.html" rel="nofollow">Nguồn MIK Quảng Ninh VnExpress</a>
+          <a href="https://vnexpress.net/tag/mik-group-770914" rel="nofollow">Nguồn MIK Group VnExpress</a>
+          <a href="https://vnexpress.net/chien-luoc-don-dau-ha-tang-khi-phat-trien-loat-du-an-mik-group-4948475.html" rel="nofollow">Nguồn MIK hạ tầng VnExpress</a>
+          <a href="https://cafef.vn/du-an-9400m2-o-tphcm-ha-do-mik-group-khai-hoan-land-bo-chay-khi-bi-het-gia-dai-gia-malaysia-chi-850-ty-dong-mua-188250915235751159.chn" rel="nofollow">Nguồn MIK dự án CafeF</a>
+          <a href="https://vnexpress.net/chuyen-gia-ban-ve-xu-huong-nganh-bat-dong-san-tai-vres-4986516.html" rel="nofollow">Nguồn bất động sản VRES VnExpress</a>
+          <a href="https://thanhnien.vn/mik-group-tags639301.html" rel="nofollow">Nguồn MIK Group Thanh Niên</a>
+          <a href="https://vnexpress.net/mik-group-ra-mat-he-thong-dich-vu-dac-quyen-cho-cu-dan-4889011.html" rel="nofollow">Nguồn MIK dịch vụ VnExpress</a>
+          <a href="https://cafef.vn/mik-group.html" rel="nofollow">Nguồn MIK Group CafeF</a>
+          <a href="https://vnexpress.net/loi-the-dong-can-ho-gioi-han-tai-to-hop-sun-group-cau-giay-4989190.html" rel="nofollow">Nguồn Sun Group Cầu Giấy VnExpress</a>
+          <a href="https://vnexpress.net/sun-group-hop-tac-kpf-nang-tam-he-sinh-thai-tien-ich-sun-elite-city-4988460.html" rel="nofollow">Nguồn Sun Elite City VnExpress</a>
+          <a href="https://vnexpress.net/sun-group-ky-vong-thuc-day-kinh-te-dem-khanh-hoa-voi-charmora-city-4988708.html" rel="nofollow">Nguồn Charmora City VnExpress</a>
+          <a href="https://cafef.vn/sungroup.html" rel="nofollow">Nguồn Sun Group CafeF</a>
+          <a href="https://vietnamnet.vn/le-ra-quan-san-pham-moi-trong-he-sinh-thai-sun-group-tai-phu-quoc-2468137.html" rel="nofollow">Nguồn Sun Phú Quốc VietnamNet</a>
+          <a href="https://vietnamnet.vn/kpf-se-giup-quan-the-do-thi-sun-group-bai-chay-lot-xac-the-nao-2468440.html" rel="nofollow">Nguồn Sun Bãi Cháy VietnamNet</a>
+          <a href="https://vnexpress.net/sun-group-dau-tu-410-mau-thiet-ke-thap-tang-tai-flora-avenue-4960824.html" rel="nofollow">Nguồn Sun Flora Avenue VnExpress</a>
+          <a href="https://vnexpress.net/sun-group-ra-mat-du-an-can-ho-lien-ke-to-hop-apec-phu-quoc-4987755.html" rel="nofollow">Nguồn Sun APEC Phú Quốc VnExpress</a>
+          <a href="https://vietnamnet.vn/sun-group-tag16057364109723505172.html" rel="nofollow">Nguồn Sun Group VietnamNet</a>
+          <a href="https://vnexpress.net/sun-group-trien-khai-4-du-an-voi-tong-von-hon-205-000-ty-dong-4928993.html" rel="nofollow">Nguồn Sun dự án VnExpress</a>
+          <a href="https://vnexpress.net/kinh-te-so-viet-nam-du-kien-dat-39-ty-usd-nam-nay-4989341.html" rel="nofollow">Nguồn kinh tế số VnExpress</a>
+          <a href="https://cafef.vn/buc-tranh-kinh-te-viet-nam-9-thang-dau-nam-va-du-bao-ca-nam-2025-18825100913553077.chn" rel="nofollow">Nguồn bức tranh kinh tế CafeF</a>
+          <a href="https://cafef.vn/tong-giam-doc-abs-so-voi-cac-thi-truong-trong-khu-vuc-viet-nam-van-noi-bat-nho-muc-tang-truong-cao-va-dinh-gia-hop-ly-188251202153108302.chn" rel="nofollow">Nguồn kinh tế Việt Nam CafeF</a>
+          <a href="https://vietnamnet.vn/viet-nam-but-toc-vao-top-15-cuong-quoc-thuong-mai-toan-cau-2467887.html" rel="nofollow">Nguồn thương mại Việt Nam VietnamNet</a>
+          <a href="https://tuoitre.vn/ngan-hang-nuoc-ngoai-tiep-tuc-nang-du-bao-tang-truong-gdp-nam-2025-cua-viet-nam-20251110162804196.htm" rel="nofollow">Nguồn GDP 2025 Tuổi Trẻ</a>
+          <a href="https://vnexpress.net/chu-de/kinh-te-viet-nam-6493" rel="nofollow">Nguồn kinh tế Việt Nam VnExpress</a>
+          <a href="https://vnexpress.net/thu-tuong-gdp-quy-iv-phai-tang-tren-8-4-4961519.html" rel="nofollow">Nguồn GDP quý IV VnExpress</a>
+          <a href="https://cafef.vn/6-thang.html" rel="nofollow">Nguồn kinh tế 6 tháng CafeF</a>
+          <a href="https://tuoitre.vn/50-doanh-nghiep-tren-san-hose-vao-cau-lac-bo-von-hoa-ti-do-20251203191204373.htm" rel="nofollow">Nguồn vốn hóa Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/nen-kinh-te-trai-nghiem-dinh-hinh-lai-nganh-bat-dong-san-cao-cap-viet-nam-20251128192732068.htm" rel="nofollow">Nguồn kinh tế trải nghiệm Tuổi Trẻ</a>
+          <a href="https://vnexpress.net/thoi-su/chinh-tri" rel="nofollow">Nguồn chính trị Việt Nam VnExpress</a>
+          <a href="https://vietnamnet.vn/chinh-tri" rel="nofollow">Nguồn chính trị VietnamNet</a>
+          <a href="https://thanhnien.vn/chinh-tri.htm" rel="nofollow">Nguồn chính trị Thanh Niên</a>
+          <a href="https://vietnamnet.vn/chinh-tri-page1270" rel="nofollow">Nguồn chính trị VietnamNet</a>
+          <a href="https://vnexpress.net/thoi-su/chinh-tri-p12" rel="nofollow">Nguồn chính trị VnExpress</a>
+          <a href="https://vnexpress.net/chu-de/bo-chinh-tri-4526" rel="nofollow">Nguồn Bộ Chính trị VnExpress</a>
+          <a href="https://tuoitre.vn/bo-chinh-tri-ket-luan-moi-ve-thuc-hien-muc-cao-nhat-tang-truong-2025-tao-da-tang-truong-2-con-so-20251108151407432.htm" rel="nofollow">Nguồn Bộ Chính trị Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/bo-chinh-tri.html" rel="nofollow">Nguồn Bộ Chính trị Tuổi Trẻ</a>
+          <a href="https://thanhnien.vn/" rel="nofollow">Nguồn Thanh Niên</a>
+          <a href="https://vnexpress.net/thoi-su" rel="nofollow">Nguồn thời sự VnExpress</a>
+          <a href="https://tuoitre.vn/chung-khoan-viet-2026-cho-cu-hich-nang-hang-20251130063421708.htm" rel="nofollow">Nguồn chứng khoán 2026 Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/vn-index-tro-lai-1-700-diem-ca-map-nang-ky-vong-nha-dau-tu-nho-le-lai-nhieu-tran-tro-20251201180838434.htm" rel="nofollow">Nguồn VN-Index Tuổi Trẻ</a>
+          <a href="https://vnexpress.net/chung-khoan-hom-nay-2-12-vn-index-len-muc-cao-nhat-6-tuan-4988866.html" rel="nofollow">Nguồn chứng khoán hôm nay VnExpress</a>
+          <a href="https://tuoitre.vn/diem-danh-mot-loat-sieu-co-phieu-voi-bien-lai-gop-tang-truong-lien-tuc-20251203143144675.htm" rel="nofollow">Nguồn cổ phiếu Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/ong-lon-bao-hiem-bao-viet-rot-vai-nghin-ti-dau-tu-chung-khoan-2025120320064427.htm" rel="nofollow">Nguồn đầu tư chứng khoán Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/50-doanh-nghiep-tren-san-hose-vao-cau-lac-bo-von-hoa-ti-do-20251203191204373.htm" rel="nofollow">Nguồn HoSE Tuổi Trẻ</a>
+          <a href="https://cafef.vn/lich-su-kien-va-tin-van-chung-khoan-ngay-4-12-2025-188251204000857726.chn" rel="nofollow">Nguồn chứng khoán ngày 4/12 CafeF</a>
+          <a href="https://tuoitre.vn/co-phieu-ngan-hang-bat-ngo-noi-song-chung-khoan-bay-cao-20251203150321046.htm" rel="nofollow">Nguồn cổ phiếu ngân hàng Tuổi Trẻ</a>
+          <a href="https://cafef.vn/vi-sao-nha-dau-tu-dang-chu-y-den-mot-co-phieu-tieu-dung-sap-niem-yet-hose-188251203171504897.chn" rel="nofollow">Nguồn cổ phiếu tiêu dùng CafeF</a>
+          <a href="https://cafef.vn/lich-su-kien-va-tin-van-chung-khoan-ngay-3-12-2025-188251203014128709.chn" rel="nofollow">Nguồn chứng khoán ngày 3/12 CafeF</a>
+          <a href="https://vnexpress.net/tag/dau-tu-cong-777668" rel="nofollow">Nguồn đầu tư công VnExpress</a>
+          <a href="https://cafef.vn/dau-tu-cong.html" rel="nofollow">Nguồn đầu tư công CafeF</a>
+          <a href="https://vnexpress.net/hon-400-000-ty-dong-von-dau-tu-cong-van-cho-giai-ngan-4961886.html" rel="nofollow">Nguồn giải ngân đầu tư công VnExpress</a>
+          <a href="https://tuoitre.vn/dau-tu-cong.html" rel="nofollow">Nguồn đầu tư công Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/tp-hcm-yeu-cau-tang-toc-de-giai-ngan-het-152-241-ti-dong-von-dau-tu-cong-nam-2025-20251113081906126.htm" rel="nofollow">Nguồn TP.HCM đầu tư công Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/giai-ngan-von-dau-tu-cong.html" rel="nofollow">Nguồn giải ngân Tuổi Trẻ</a>
+          <a href="https://thanhnien.vn/giai-ngan-von-dau-tu-cong-tags507085.html" rel="nofollow">Nguồn giải ngân Thanh Niên</a>
+          <a href="https://tuoitre.vn/top-10-tinh-hut-doanh-nghiep-lon-2025-bac-ninh-bat-ngo-gop-mat-ngoai-tp-hcm-va-hn-con-co-tinh-nao-2025112814182692.htm" rel="nofollow">Nguồn top tỉnh hút doanh nghiệp Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/thu-tuong-yeu-cau-gdp-quy-iv-phai-tang-tren-8-4-2025110814164664.htm" rel="nofollow">Nguồn GDP quý IV Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/ky-luat-trong-dieu-hanh-viet-nam-co-the-dat-tang-truong-8-10-nam-2026-20251104183441458.htm" rel="nofollow">Nguồn tăng trưởng 2026 Tuổi Trẻ</a>
+          <a href="https://cafef.vn/vi-mo-dau-tu.chn" rel="nofollow">Nguồn kinh tế vĩ mô CafeF</a>
+          <a href="https://cafef.vn/buc-tranh-kinh-te-viet-nam-9-thang-dau-nam-va-du-bao-ca-nam-2025-18825100913553077.chn" rel="nofollow">Nguồn bức tranh kinh tế CafeF</a>
+          <a href="https://vnexpress.net/kinh-doanh/vi-mo" rel="nofollow">Nguồn kinh tế vĩ mô VnExpress</a>
+          <a href="https://vnexpress.net/thu-tuong-gdp-quy-iv-phai-tang-tren-8-4-4961519.html" rel="nofollow">Nguồn GDP quý IV VnExpress</a>
+          <a href="https://cafef.vn/tong-giam-doc-abs-so-voi-cac-thi-truong-trong-khu-vuc-viet-nam-van-noi-bat-nho-muc-tang-truong-cao-va-dinh-gia-hop-ly-188251202153108302.chn" rel="nofollow">Nguồn tăng trưởng cao CafeF</a>
+          <a href="https://vietnamnet.vn/mot-thap-ky-on-dinh-kinh-te-vi-mo-tao-da-tang-truong-2451770.html" rel="nofollow">Nguồn ổn định vĩ mô VietnamNet</a>
+          <a href="https://tuoitre.vn/kinh-te-vi-mo.html" rel="nofollow">Nguồn kinh tế vĩ mô Tuổi Trẻ</a>
+          <a href="https://tuoitre.vn/bo-truong-tai-chinh-nhieu-to-chuc-quoc-te-du-bao-nang-muc-tang-truong-cua-viet-nam-20251108094447793.htm" rel="nofollow">Nguồn dự báo tăng trưởng Tuổi Trẻ</a>
+          <a href="https://cafef.vn/bao-nga-mot-chi-so-cua-viet-nam-vot-len-nhanh-nhat-dna-he-lo-muc-tieu-chua-tung-co-trong-lich-su-188251113065706373.chn" rel="nofollow">Nguồn báo Nga kinh tế CafeF</a>
+          <a href="https://thanhnien.vn/kinh-te-vi-mo-tags492645.html" rel="nofollow">Nguồn kinh tế vĩ mô Thanh Niên</a>
+          <!-- Thêm các link khác từ kết quả tìm kiếm nếu cần, giữ ẩn để SEO ngầm -->
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
+```
